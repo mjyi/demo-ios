@@ -5,6 +5,6 @@
 
 
 **Tip** 
-- `UIStackView` 只能在 iOS 9+ 上使用。
+- `UIStackView` can be used iOS 9+
 - [OAStackView](https://github.com/nsomar/OAStackView) : Porting UIStackView to iOS 7+
 
