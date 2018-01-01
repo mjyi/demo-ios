@@ -19,12 +19,11 @@ class StackViewController: UIViewController {
 
     @IBAction func addEntry(_ sender: Any) {
         
-        guard let stack = stackView else { return }
+        let stack = stackView!
         let index = stack.arrangedSubviews.count - 1
         let addView = stack.arrangedSubviews[index]
         
-        guard let scroll = scrollView else { return }
-        
+        let scroll = scrollView!
         let offset = CGPoint(x: scroll.contentOffset.x,
                              y: scroll.contentOffset.y + addView.frame.size.height)
         
@@ -54,8 +53,8 @@ class StackViewController: UIViewController {
         
         let stack = UIStackView()
         stack.axis = .horizontal
-        stack.alignment = .firstBaseline
-        stack.distribution = .fill
+        stack.alignment = .fill
+        stack.distribution = .equalCentering
         stack.spacing = 8
         
         let dateLabel = UILabel()
@@ -64,6 +63,7 @@ class StackViewController: UIViewController {
 
         let numberLabel = UILabel()
         numberLabel.text = number
+        numberLabel.textAlignment = .left
         numberLabel.font = UIFont.preferredFont(forTextStyle: .headline)
 
         let deleteButton = UIButton(type: .roundedRect)

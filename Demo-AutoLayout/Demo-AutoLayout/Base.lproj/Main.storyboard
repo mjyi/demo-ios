@@ -41,6 +41,26 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="wmj-Zk-rpp"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="7ec-Xb-Ua6" style="IBUITableViewCellStyleDefault" id="7d4-LL-pfj">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7d4-LL-pfj" id="uP5-oF-lFs">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="AutoLayout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ec-Xb-Ua6">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sxK-gc-zuL" kind="show" id="VgK-gK-tDV"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -54,6 +74,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKJ-R2-Lwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="454" y="-117"/>
+        </scene>
+        <!--Auto Layout View Controller-->
+        <scene sceneID="jTl-mE-UQB">
+            <objects>
+                <viewController id="sxK-gc-zuL" customClass="AutoLayoutViewController" customModule="Demo_AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lkw-6T-vCr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mK-pZ-Tq0">
+                                <rect key="frame" x="20" y="110.33333333333333" width="45" height="20.999999999999986"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uhi-xa-eV9">
+                                <rect key="frame" x="85" y="108" width="270" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uhi-xa-eV9" firstAttribute="top" secondItem="bCF-NO-LLc" secondAttribute="top" constant="20" id="1Je-gW-L4q"/>
+                            <constraint firstItem="5mK-pZ-Tq0" firstAttribute="leading" secondItem="bCF-NO-LLc" secondAttribute="leading" constant="20" id="ZJQ-KS-iKf"/>
+                            <constraint firstItem="bCF-NO-LLc" firstAttribute="trailing" secondItem="Uhi-xa-eV9" secondAttribute="trailing" constant="20" id="ZfP-VF-jqL"/>
+                            <constraint firstItem="Uhi-xa-eV9" firstAttribute="baseline" secondItem="5mK-pZ-Tq0" secondAttribute="baseline" id="goc-2e-vHO"/>
+                            <constraint firstItem="Uhi-xa-eV9" firstAttribute="leading" secondItem="5mK-pZ-Tq0" secondAttribute="trailing" constant="20" id="qfA-RD-G9g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bCF-NO-LLc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5P-9b-Y5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248.8" y="-103.44827586206897"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rB7-V7-3no">
@@ -69,7 +125,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQ3-ks-A6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-514" y="132"/>
+            <point key="canvasLocation" x="-226" y="-117"/>
         </scene>
         <!--Stack View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -120,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215.2" y="-117.48768472906404"/>
+            <point key="canvasLocation" x="1222" y="-795"/>
         </scene>
     </scenes>
 </document>

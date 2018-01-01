@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D82D0F741FF8FD06000016C9 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0F731FF8FD06000016C9 /* RootTableViewController.swift */; };
+		D84679A41FF92EC2004EAA7D /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84679A31FF92EC2004EAA7D /* AutoLayoutViewController.swift */; };
 		D87BC3DA1FF8BDC300364C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BC3D91FF8BDC300364C79 /* AppDelegate.swift */; };
 		D87BC3DF1FF8BDC300364C79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87BC3DD1FF8BDC300364C79 /* Main.storyboard */; };
 		D87BC3E11FF8BDC300364C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87BC3E01FF8BDC300364C79 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		D82D0F731FF8FD06000016C9 /* RootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		D84679A31FF92EC2004EAA7D /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 		D87BC3D61FF8BDC300364C79 /* Demo-AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-AutoLayout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87BC3D91FF8BDC300364C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D87BC3DE1FF8BDC300364C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				D87BC3D91FF8BDC300364C79 /* AppDelegate.swift */,
 				D82D0F731FF8FD06000016C9 /* RootTableViewController.swift */,
 				D87BC3F91FF8FB1500364C79 /* StackViewController.swift */,
+				D84679A31FF92EC2004EAA7D /* AutoLayoutViewController.swift */,
 				D87BC3DD1FF8BDC300364C79 /* Main.storyboard */,
 				D87BC3E01FF8BDC300364C79 /* Assets.xcassets */,
 				D87BC3E21FF8BDC300364C79 /* LaunchScreen.storyboard */,
@@ -205,6 +208,7 @@
 				D87BC3DA1FF8BDC300364C79 /* AppDelegate.swift in Sources */,
 				D82D0F741FF8FD06000016C9 /* RootTableViewController.swift in Sources */,
 				D87BC3FA1FF8FB1500364C79 /* StackViewController.swift in Sources */,
+				D84679A41FF92EC2004EAA7D /* AutoLayoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
